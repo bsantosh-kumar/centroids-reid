@@ -138,7 +138,7 @@ _C.SOLVER.QUERY_CONTRASTIVE_WEIGHT = 1.0
 _C.SOLVER.CENTROID_CONTRASTIVE_WEIGHT = 1.0
 # Whether to use automatic Python Lightning optimization
 _C.SOLVER.USE_AUTOMATIC_OPTIM = False
-
+_C.SOLVER.PCA_K=256
 # ---------------------------------------------------------------------------- #
 # TEST
 # ---------------------------------------------------------------------------- #

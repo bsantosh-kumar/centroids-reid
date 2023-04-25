@@ -52,7 +52,7 @@ def get_backbone(name: str, **kwargs) -> torch.nn.Module:
     if name in torchvision.models.__dict__:
         model_creator = torchvision.models.__dict__.get(name)
     elif name == "resnet50_ibn_a":
-        model = resnet50_ibn_a(last_stride=1, **kwargs)
+        modelf = resnet50_ibn_a(last_stride=1, **kwargs)
         model_creator = True
     else:
         raise AttributeError(f"Unknown architecture {name}")

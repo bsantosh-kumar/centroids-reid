@@ -6,9 +6,10 @@ DATASETS.ROOT_DIR './data/' \
 SOLVER.IMS_PER_BATCH 16 \
 TEST.IMS_PER_BATCH 128 \
 SOLVER.BASE_LR 0.00035 \
-OUTPUT_DIR './logs/market1501/256_resnet50' \
+OUTPUT_DIR './logs/mars/256_resnet50' \
 DATALOADER.USE_RESAMPLING False \
 USE_MIXED_PRECISION False \
 SOLVER.DISTANCE_FUNC 'manhattan' \
-SOLVER.PCA_K 1024 \
-REPRODUCIBLE True
+REPRODUCIBLE True \
+MODEL.PRETRAIN_PATH './logs/market1501/256_resnet50/train_ctl_model/version_50/auto_checkpoints/checkpoint_38.pth' \
+MODEL.RESUME_TRAINING True
